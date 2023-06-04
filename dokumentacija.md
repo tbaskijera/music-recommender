@@ -7,7 +7,7 @@
 ## Tablica sadržaja
 
 1. [Uvod](#uvod)
-2. [Struktura programa](#struktura-programa)
+2. [Struktura programa i baze](#struktura-programa-i-baze)
 3. [Hodogram programa](#hodogram-programa)
 4. [Objašnjenja i zanimljivi djelovi](#objašnjenja-i-zanimljivi-djelovi)
 5. [Evaluacija sustava](#evaluacija-sustava)
@@ -54,7 +54,7 @@ U MongoDB bazu pohranjeni su podaci o 106 017 pjesama u, naravno, isto toliko do
 Polje `_id` je vrijednost koju MongoDB automatski dodjeli dokumentu, dok je polje `id` identifikator pjesme na Spotifyu.
 
 ![Izgled baze](https://i.ibb.co/9T69WFq/Screenshot-from-2023-06-04-11-40-25.png)
- 
+
 ## Hodogram programa
 
 Odvijanje programa, grubo (gledajući samo one bitnije procese, bez potprocesa):
