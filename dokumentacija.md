@@ -53,7 +53,7 @@ U MongoDB bazu pohranjeni su podaci o 106 017 pjesama u, naravno, isto toliko do
 
 Polje `_id` je vrijednost koju MongoDB automatski dodjeli dokumentu, dok je polje `id` identifikator pjesme na Spotifyu.
 
-![Izgled baze](https://ibb.co/SnbXBhK)
+![Izgled baze](https://i.ibb.co/9T69WFq/Screenshot-from-2023-06-04-11-40-25.png)
  
 ## Hodogram programa
 
