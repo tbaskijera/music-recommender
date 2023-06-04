@@ -26,7 +26,7 @@ def main():
 
     # To get playlist id from spotify app, click share and copy the string inside playlist/...?
     # example: https://open.spotify.com/user/tbaski/playlist/45tyEi7AhkJeLQ6RWTxGqd?si=lkALLKMiTy-jCCQS3rko4A
-    playlist_id = '62vZL7XfkRNEd8K6wjGABT' # 45tyEi7AhkJeLQ6RWTxGqd
+    playlist_id = args.playlist
     user_playlist_data, track_id = fetch_user_playlist(sp, playlist_id)
     user_features = pd.DataFrame(user_playlist_data, columns=AUDIO_FEATURES_LIST)
     
@@ -54,6 +54,8 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-fetch', type=bool, default = False, help='Fetch new songs or not (default = False)')
     parser.add_argument('-iterations', type=int, default=1, help='Number of times to fetch songs (default = 1)')
+    parser.add_argument('-playlist', type=str, default='62vZL7XfkRNEd8K6wjGABT', help='Playlist id') # 45tyEi7AhkJeLQ6RWTxGqd
+
 
     args = parser.parse_args()
     main()
