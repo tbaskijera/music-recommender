@@ -39,9 +39,7 @@ U ovom slučaju, sustav za preporuku glazbe oslanja se na 11 različitih audio z
 - vrijednost (*engl*. valence)
 - tempo (*engl*. tempo)
 
-U MongoDB bazu pohranjeni su podaci o 106 017 pjesama u, naravno, isto toliko dokumenata.
-
-## Struktura programa
+## Struktura programa i baze
 
 Cjeloupni projekt rasčlanjen je na 5 različitih python datoteka:
 
@@ -51,6 +49,12 @@ Cjeloupni projekt rasčlanjen je na 5 različitih python datoteka:
 - constants.py - dio programa u kojemu su navedene konstante koje se koriste
 - utils.py - dio programa koji sadrži određene pomoćne funkcije (korištena je samo jedna)
 
+U MongoDB bazu pohranjeni su podaci o 106 017 pjesama u, naravno, isto toliko dokumenata. Svaki dokument sadrži ukupno 15 polja, `_id`, `id`, `name`, `artist` i audio svojstva koja su prije spomenuta.
+
+Polje `_id` je vrijednost koju MongoDB automatski dodjeli dokumentu, dok je polje `id` identifikator pjesme na Spotifyu.
+
+![Izgled baze](https://ibb.co/SnbXBhK)
+ 
 ## Hodogram programa
 
 Odvijanje programa, grubo (gledajući samo one bitnije procese, bez potprocesa):
